@@ -1,0 +1,67 @@
+---
+title: "week4_assignment"
+author: "uzma"
+date: "21 November 2018"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## The Swiss Dataset
+
+The Swiss dataset contains data about each of the 47 French-speaking provinces of Switzerland in 1888. The following data is collected:
+
+- Fertility,a standardized fertility measure.
+- Agriculture,% of males involved in agriculture as occupation.
+- Examination,% draftees receiving highest mark on army examination.
+- Education,draftees receiving education beyond primary school.
+- Catholic,% catholic
+- Infant.Mortality,% live births who live less than 1 year.
+- Except for Fertility, all variables are measured as a percentage of the population.
+
+## Swiss Dtaset
+
+```{r swiss, echo = TRUE}
+head(swiss)
+```
+
+## Summary of data
+
+```{r summary, echo = TRUE}
+summary(swiss)
+```
+
+## Slide with Plot
+
+This app predicts the Fertility, by using two parameters;
+- one is % of people receiving education beyond primary school.
+here is plot between Fertility and educated people;
+
+```{r plot1}
+plot(swiss$Education,swiss$Fertility,xlab = 'educated population',ylab = 'Fertility',bty='n',pch=16,col='blue')
+```
+
+## Slide with Plot
+
+- the other predicting parametr is number of people involved in Agriculture accupation.
+here is plot between Fertility and Agriculture;
+
+```{r plot2}
+
+plot(swiss$Agriculture,swiss$Fertility,xlab = '% involved in Agriculture',ylab = 'Fertility',bty='n',pch=16,col='blue')
+```
+
+## Slide with App Link
+we made 2 regression models;
+
+- one compares Fertility and Education,
+
+- other compares Fertility and Agriculture
+
+
+https://uzmamahmood.shinyapps.io/swissDataApp/
+
+
+
