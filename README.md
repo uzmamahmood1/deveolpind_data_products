@@ -4,5 +4,5 @@ In this project, we created a Shiny application and deployed it on RStudio's ser
 
 The application is [published online on shinyapps.io](https://uzmamahmood.shinyapps.io/swissDataApp/).
 
-The presentation is [published online on RPubs](http://rpubs.com/uzma/441619) and [on GitHub]()
+The presentation is [published online on RPubs](http://rpubs.com/uzma/441619) and [on GitHub]( https://github.com/uzmamahmood1/deveolpind_data_products)
 
